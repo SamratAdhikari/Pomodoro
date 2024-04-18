@@ -1,0 +1,111 @@
+:root{
+  --red: #f54e4e;
+  --green: #3cb371;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu.ttf') format('truetype');
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(39, 41, 68);
+  
+  text-align: center;
+  margin: 0 auto;
+  color: #eee;
+  align-items: center;
+}
+
+.title{
+  padding: 2rem 2rem 0 0;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.progress-bar{
+  width: 35rem;
+  height: 35rem;
+}
+
+button{
+  background-color: transparent;
+  color: rgba(255,255,255,.8);
+  border: 0;
+  display: inline-block;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.buttons{
+  margin-top: 2rem;
+}
+
+
+button.settings-icon{
+  width: auto;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  margin-top: 1rem;
+}
+
+button.settings-icon svg{
+  width: 3.6rem;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+
+.settings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+label{
+  display: block;
+  font-size: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  /* text-transform: capitalize; */
+}
+
+.slider{
+  height: 4.4rem;
+  width: 50rem;
+  border: 0.2rem solid;
+  border-radius: 5rem;
+}
+
+.thumb{
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+
+.slider.red .thumb{
+background-color: var(--red);
+}
+
+.slider.red{
+  border-color: var(--red);
+}
+
+.slider.green{
+  border-color: var(--green);
+}
+
+.slider.green .thumb{
+  background-color: var(--green);
+}
+
